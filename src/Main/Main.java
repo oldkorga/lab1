@@ -20,6 +20,7 @@ public class Main {
 		//forming breakfast
 			for(int i = 0; i < args.length; i++) {
 				String[] parts = args[i].split("/");
+				//checking for flags
 				if(parts[0].startsWith("-")) {
 					if(parts[0].endsWith("calories")) {
 						caloriesNeeded = true;
@@ -27,7 +28,9 @@ public class Main {
 					}else
 					if(parts[0].endsWith("find")) {
 						i++;
-						productToCount = args[i].split("/");
+						if(i < args.length && !(args[i].split("/")[0].startsWith("-")))
+							productToCount = args[i].split("/");
+						else System.out.println("No product to look for");
 						continue;
 					}else
 					if(parts[0].endsWith("sort")) {
