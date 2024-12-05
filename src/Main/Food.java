@@ -34,4 +34,10 @@ public abstract class Food implements Consumable, Nutritious {
 	public double calculateCalories() {
 		return 0;
 	}
+
+	
+	public int calculateparametr() {
+		return 0;
+	}
+	
 }

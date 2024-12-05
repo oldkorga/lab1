@@ -16,4 +16,10 @@ public class Cheese extends Food {
 		// TODO Auto-generated method stub
 		return 200;
 	}
+	
+	public int calculateparametr() {
+		int n=0;
+		return n;
+	}
+	
 	}

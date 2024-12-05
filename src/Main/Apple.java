@@ -6,8 +6,9 @@ public class Apple extends Food {
 		super("Apple");
 		this.size = name;
 	}
-	
+
 	private String size;
+	
 	
 	public String getSize() {
 		return size;
@@ -46,6 +47,12 @@ public class Apple extends Food {
 		}else if (size.equals("Large")) {
 			return 400;
 		}else return 300;
+	}
+	
+	@Override
+	public int calculateparametr() {
+		int m=1;
+		return m;
 	}
 
 }

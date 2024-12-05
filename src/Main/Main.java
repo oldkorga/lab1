@@ -68,9 +68,9 @@ public class Main {
 			public int compare(Object f1, Object f2) {
 				if(f1 == null) return 1;
 				if(f2 == null) return -1;
-				if (((Food)f1).calculateCalories() > (((Food)f2).calculateCalories())) {
+				if (((Food)f1).calculateparametr()	 > ((Food)f2).calculateparametr()) {
 					return -1;
-				}else if(((Food)f1).calculateCalories() < (((Food)f2).calculateCalories())) {
+				}else if(((Food)f1).calculateparametr() < (((Food)f2).calculateparametr())) {
 					return 1;
 				}else return 0;
 				};});
